@@ -1,0 +1,97 @@
+💰 Expense Tracker (GUI + File Storage)
+🧭 1. Project Overview
+
+Type: Desktop Application
+Tech: Java + Swing + File Handling
+Storage: Local file (.txt / .csv)
+
+👉 No database needed → simpler + faster
+
+📦 2. Functional Requirements
+Add expense (amount, category, date, note)
+View all expenses
+Delete expense
+Filter by category/date
+Show total spending
+⚙️ 3. Non-Functional Requirements
+Simple & clean UI
+Fast load/save
+No data loss
+Proper input validation
+🏗️ 4. Project Structure
+expense-tracker/
+ ├── model/
+ ├── service/
+ ├── ui/
+ ├── util/
+ └── Main.java
+🧱 5. Core Components
+🔹 Model
+
+Expense.java
+
+id
+amount
+category
+date
+note
+🔹 Service Layer
+
+ExpenseService.java
+
+addExpense()
+getAllExpenses()
+deleteExpense()
+calculateTotal()
+🔹 File Handling
+
+FileHandler.java
+
+saveToFile()
+readFromFile()
+
+👉 Use CSV format:
+
+id,amount,category,date,note
+🔹 UI Layer (Swing)
+
+Screens:
+
+Main Dashboard
+Add Expense Form
+Expense Table (JTable)
+🔌 6. Key Java Concepts Used
+OOP (classes, objects)
+Swing (GUI + event handling)
+File I/O (BufferedReader, FileWriter)
+Collections (ArrayList)
+🗓️ 7. Step-by-Step Plan
+✅ Day 1–2: Setup
+Create project structure
+Build Expense model
+Setup file read/write
+✅ Day 3–4: Core Logic
+Add expense
+Save to file
+Load expenses
+✅ Day 5–6: GUI
+Create form (amount, category, etc.)
+Display table (JTable)
+✅ Day 7: Features
+Delete expense
+Calculate total
+Basic filtering
+✅ Day 8: Polish
+Validation (no empty fields)
+UI improvements
+Bug fixes
+🧪 8. Testing
+Add multiple expenses
+Restart app → data persists
+Delete & verify
+Check total calculation
+🚀 9. Optional Upgrades (high value)
+Monthly reports
+Charts (spending graph)
+Dark mode
+Export to Excel
